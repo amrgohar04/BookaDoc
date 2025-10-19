@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book A Doc — About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+     <!-- HEADER / NAVBAR -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <img src="Vector (1).png" alt="Logo" class="logo-mark">
+      <div class="logo-text">Book A Doc</div>
+    </div>
+
+    <!-- nav -->
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home" class="nav-link" data-target="home">Home</a>
+      <a href="#doctors" class="nav-link" data-target="doctors">Doctors</a>
+      <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+      <a href="#about" class="nav-link active" data-target="about">About</a>
+      <div class="nav-underline" id="navUnderline" aria-hidden="true"></div>
+    </nav>
+
+    <!-- hamburger button -->
+    <button id="menuToggle" class="hamburger" aria-label="Toggle menu" aria-controls="mainNav" aria-expanded="false" type="button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <div class="header-actions">
+      <button class="btn secondary" id="downloadBtn">Download our app</button>
+      <button class="btn ghost" id="openAuthBtn" type="button">Sign In / Register</button>
+    </div>
+  </div>
+</header>
+
+  <!-- HERO / TOP GAP (anchor target for Home) -->
+  <section id="home" class="spacer"></section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about section container">
+    <p class="kicker">ABOUT US</p>
+    <h2 class="section-title">What Sets Us Apart?</h2>
+    <p class="lead">Our wsbsite helps you find trusted doctors and book appointments easily. We focus on reliable care, fast booking, and verified professionals.</p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-number">01</div>
+        <h3 class="card-title">Verified Doctors</h3>
+        <p class="card-text">كل الأطباء لدينا موثّقين ويتم فحص مؤهلاتهم لضمان رعاية طبية موثوقة وآمنة لكل مريض.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-number">02</div>
+        <h3 class="card-title">Easy Online Booking</h3>
+        <p class="card-text">حجوزات سريعة عبر الإنترنت — اختر الطبيب والتاريخ والوقت واستلم تأكيد الحجز فورًا.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-number">03</div>
+        <h3 class="card-title">Follow-up & Records</h3>
+        <p class="card-text">سجلات الزيارة المتاحة وإمكانية متابعة الحالات بسهولة مع تذكير بالمواعيد.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD APP SECTION -->
+  <section class="download-section">
+    <div class="download-inner container">
+      <div class="download-visual">
+        <!-- simple vector placeholder like in image -->
+        <div class="device-outline"></div>
+      </div>
+      <div class="download-text">
+        <p class="small">We exist for you</p>
+        <h2>Because we care for you</h2>
+        <p class="muted">Now enjoy our health care services on our app.</p>
+        <div class="download-actions">
+          <button class="btn light" id="downloadSectionBtn">Download our app</button>
+          <div class="app-icons">
+            <img src="ion_logo-google-playstore.png" alt="Logo" class="app-badge">
+            <img src="Vector2.png" alt="Logo" class="app-badge">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="logo footer-logo">
+          <img src="Vector (1).png" alt="Logo" class="logo-mark">
+          <div class="logo-text">Book A Doc</div>
+        </div>
+        <p class="footer-desc">Your easiest way to book appointments with trusted doctors across all specialties.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact us:</h4>
+        <p>  +20 100 000 0000</p>
+        <p> info@Book A Doc.com</p>
+        <p class="follow">Follow us: Facebook · Twitter · Instagram</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p> 2025 Book A Doc. All rights reserved.</p>
+    </div>
+  </footer>
+<div id="authPopupContainer"></div>
+  <script type="module" src="about.js"></script>
+
+</body>
+</html>

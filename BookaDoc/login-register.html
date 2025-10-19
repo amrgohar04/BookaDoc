@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="login-register.css" />
+
+  <title>Auth</title>
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-popup">
+      <!-- AUTH POPUP (Login / Register tabs) -->
+      <div class="auth-overlay" id="authOverlay" aria-hidden="true">
+        <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+          <button class="close-auth" id="closeAuth" aria-label="Close authentication dialog">×</button>
+
+          <div class="auth-tabs" role="tablist">
+            <button class="tab active" data-tab="login" role="tab" aria-selected="true">Login</button>
+            <button class="tab" data-tab="register" role="tab" aria-selected="false">Register</button>
+          </div>
+
+          <div class="tab-panels">
+            <!-- LOGIN -->
+            <form id="loginForm" class="panel active" autocomplete="on">
+              <h2 id="authTitle" class="visually-hidden">Sign In</h2>
+              <label>
+                Email
+                <input type="email" id="loginEmail" required placeholder="you@example.com" />
+              </label>
+              <label>
+                Password
+                <input type="password" id="loginPassword" required placeholder="Password" />
+              </label>
+              <div class="form-row">
+                <button type="submit" class="btn primary">Sign In</button>
+              </div>
+              <p class="auth-msg" id="loginMsg"></p>
+            </form>
+
+            <!-- REGISTER -->
+            <form id="registerForm" class="panel" autocomplete="on">
+              <label>
+                Full Name
+                <input type="text" id="regName" required placeholder="Full name" />
+              </label>
+              <label>
+                Email
+                <input type="email" id="regEmail" required placeholder="you@example.com" />
+              </label>
+              <label>
+                Password
+                <input type="password" id="regPassword" required placeholder="Choose a password" />
+              </label>
+              <div class="form-row">
+                <button type="submit" class="btn primary">Create Account</button>
+              </div>
+              <p class="auth-msg" id="regMsg"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script type="module">
+    import { initAuth } from './login-register.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      const overlay = document.getElementById('authOverlay');
+      if (!overlay) return;
+      // Ensure visible when this page is opened directly
+      overlay.style.display = 'flex';
+      initAuth(overlay);
+    });
+  </script>
+</body>
+</html>
