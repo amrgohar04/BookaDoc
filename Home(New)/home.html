@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+
+                            <!-- nav -->
+    <header class="header">
+        
+        <div class="logonav">
+        <img src="./images/Vector.png" alt="">
+        </div> 
+
+        <div class="responnav">
+            <i class="fa-solid fa-bars active"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <nav class="links">
+            <ul>
+                <li><a href="#">doctors</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+            <div class="signinicon">
+                <i class="fa-solid fa-user-plus"></i>
+                <a href="#">Sign In/Register</a>
+            </div>
+        </nav>
+    </header>
+
+
+                            <!-- home -->
+            <!-- search -->
+    <section class="search-container">
+        <div class="search-box">
+            <label for="doctor-search">Search For A Doctor</label>
+        <div class="input">
+            <i class="fa fa-search"></i>
+            <input type="text" id="doctor-search" placeholder="search here"/>
+        </div>
+        </div>
+
+    <div class="city-box">
+        <label for="city-select">Select Your City</label>
+    <div class="select">
+        <i class="fa fa-location-dot"></i>
+        <select id="city-select">
+        <option selected>All Cities</option>
+        <option>Cairo</option>
+        <option>Alexandria</option>
+        <option>Giza</option>
+        </select>
+    </div>
+    </div>
+    </section>
+
+        <!-- home -->
+    <section class="home">
+
+            <h2>Our Top Specialities</h2>
+            <div id="container-spec"></div>
+    </section>  
+    
+    
+
+                            <!-- fotter -->
+                        
+                    <div id="finish"></div>
+
+    
+    <script src="./js/home.js"></script>
+</body>
+</html>
