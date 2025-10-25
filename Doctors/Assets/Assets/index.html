@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Consultation App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Nav/css/nav.css">
+    <link rel="stylesheet" href="../Nav/css/all.min.css">
+    <link rel="stylesheet" href="../Footer/css/fotter.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      body {
+        background-color: #f8f9fa;
+      }
+
+      #main {
+        padding: 20px;
+        min-height: 100vh;
+      }
+
+      /* تنسيقات متجاوبة إضافية */
+      @media (max-width: 768px) {
+        #main {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logonav">
+        <img src="./docImages/Vector.png" alt="" />
+      </div>
+      <div class="responnav">
+        <i class="fa-solid fa-bars active"></i>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <nav class="links">
+        <ul>
+          <li><a href="../Home/home.html">home</a></li>
+          <li><a href="./index.html">doctors</a></li>
+          <li><a href="../About1/about.html">about</a></li>
+          <li><a href="../Contact/index.html">contact</a></li>
+        </ul>
+        <div class="signinicon">
+          <i class="fa-solid fa-user-plus"></i>
+          <a href="../loginRegister/loginRegister.html">Sign In/Register</a>
+        </div>
+      </nav>
+    </header>
+    <div style="height: 5vh;"></div>
+    <div id="main"></div>
+    <script src="../Nav/nav.js"></script>
+    <script type="module" src="./JS/main.js"></script>
+        <div id="finish"></div>
+    <script src="../Footer/fotter.js"></script>
+  </body>
+</html>
