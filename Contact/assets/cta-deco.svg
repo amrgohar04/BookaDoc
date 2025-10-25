@@ -1,0 +1,18 @@
+<svg width="940" height="320" viewBox="0 0 940 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="cloud" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(760 180) scale(260)">
+      <stop offset="0" stop-color="white" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(140 210) scale(240)">
+      <stop offset="0" stop-color="white" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="760" cy="180" r="260" fill="url(#cloud)"/>
+  <circle cx="140" cy="210" r="240" fill="url(#cloud2)"/>
+  <rect x="60" y="36" width="470" height="252" rx="22" stroke="white" stroke-width="5" opacity="0.95"/>
+  <rect x="360" y="92" width="360" height="208" rx="22" stroke="white" stroke-width="5" opacity="0.95"/>
+</svg>
