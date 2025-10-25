@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+  <script src="profile.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="profile-card" role="region" aria-labelledby="profile-title">
+      <header class="card-header">
+        <h1 id="profile-title">Your Profile</h1>
+        <p class="subtitle">Manage your personal information</p>
+      </header>
+
+      <form class="form" id="profileForm" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" />
+          </div>
+
+          <div class="field">
+            <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate" name="birthdate" />
+          </div>
+
+          <div class="field">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="">Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Engneer</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country" autocomplete="country-name" />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" disabled />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Edit your password" autocomplete="new-password" />
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="saveBtn" class="btn-primary">Save changes</button>
+          <span class="status" id="statusMsg" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

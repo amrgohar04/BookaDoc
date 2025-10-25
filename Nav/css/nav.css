@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color:rgb(16,147,155) */
+    
+}
+.header{
+    height: 80px !important;
+    padding: 0 5rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom: 3px solid rgb(16, 147, 155);
+    color: black;
+}
+.logonav img{
+    height: 60px;
+    
+}
+.responnav{
+    display: none;
+}
+.links {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.links ul{
+    display: flex;
+    list-style-type: none;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+}
+.links li a{
+    text-transform: uppercase;
+}
+.links li a:hover {
+    color: #0e7c85;
+    transition: 0.3s;
+}
+.signinicon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(16, 147, 155);
+    margin-left: auto;
+}
+.signinicon i {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.signinicon a {
+    color:rgb(16, 147, 155);
+    transition: color 0.3s ease;
+}
+.signinicon a:hover {
+    color: #0e7c85;
+}
+@media (max-width:900px) {
+    .header{
+        padding: 0 3rem;
+        position: relative;
+    }
+
+/* icons */
+    .responnav{
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        width: 45px;
+        height: 45px;
+        position: relative;
+        
+    }
+    
+    .responnav i{
+        position: absolute;
+        inset:0;
+        margin: auto;
+        width: max-content;
+        height: max-content;
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    .responnav i.active{
+        opacity: 1;
+    }
+
+/* contect */
+    .links{
+        position: absolute;
+        top:80px;
+        left:0;
+        width: 100%;
+        padding: 0 3rem;
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    .links.active{
+        opacity: 1;
+    }
+
+    .links ul{
+        display: block;
+    }
+    
+    .links{
+        display: block;
+    }
+
+    .header a{
+        margin: 0;
+
+    }
+
+    .links ul li{
+        margin: 20px 0;
+        border-bottom: 1px solid rgb(16, 147, 155);
+        padding-bottom: 10px;
+    }
+    
+    .signinicon{
+        margin: 20px 0;
+    }
+}
+
+
